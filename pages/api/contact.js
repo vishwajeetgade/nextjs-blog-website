@@ -28,7 +28,7 @@ async function handler(req, res) {
     let client = null;
     try {
       client = await MongoClient.connect(
-        "mongodb+srv://root:root123@cluster0.ienho1h.mongodb.net/blog-nextjs-db?retryWrites=true&w=majority"
+        process.env.mongodb_url
       );
     } catch (err) {
       res.status(500).json({
