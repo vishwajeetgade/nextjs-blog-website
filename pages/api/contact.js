@@ -41,7 +41,6 @@ async function handler(req, res) {
     try {
       const db = client.db();
       const result = await db.collection("queries").insertOne(newData);
-      console.log(result);
     } catch (err) {
       client.close();
       res.status(500).json({

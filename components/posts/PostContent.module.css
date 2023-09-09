@@ -19,6 +19,13 @@
   max-width: 600px;
 }
 
+.inlineCode{
+  display: inline;
+  padding: 0 4px;
+  background-color: #4b4b59;
+  color: white;
+}
+
 @media (min-width: 768px) {
   .content {
     padding: var(--size-8);
